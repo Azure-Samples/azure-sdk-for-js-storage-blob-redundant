@@ -25,36 +25,29 @@ const readInput = readline.createInterface({
 // Read environment variables for storage access.
 const accountName = process.env.AZURE_STORAGE_ACCOUNT_NAME;
 const storageAccessKey = process.env.AZURE_STORAGE_ACCOUNT_ACCESS_KEY;
-const secondaryAccountName = `${accountName}-secondary`;
+const sharedKeyCredential = new SharedKeyCredential(accountName, storageAccessKey);
 
-// Create a SharedKeyCredential for storage access.
-const sharedKeyCredential = new SharedKeyCredential(
-  accountName,
-  storageAccessKey);
+const primaryAccountURL = `https://${accountName}.blob.core.windows.net`;
+const secondaryAccountURL = `https://${accountName}-secondary.blob.core.windows.net`;
 
 // Create a pipeline with secondary endpoint and retry options defined.
 const pipeline = StorageURL.newPipeline(sharedKeyCredential, {
   retryOptions: {
-    maxTries: 3, tryTimeoutInMs: 10000,
-    retryDelayInMs: 500, maxRetryDelayInMs: 1000,
-    secondaryHost: `https://${secondaryAccountName}.blob.core.windows.net`
+    maxTries: 3, 
+    tryTimeoutInMs: 10000,
+    retryDelayInMs: 500, 
+    maxRetryDelayInMs: 1000,
+    secondaryHost: secondaryAccountURL
   }
 });
 
-// Create a ServiceURL for the primary and secondary region.
-const serviceURL = new ServiceURL(
-  `https://${accountName}.blob.core.windows.net`,
-  pipeline
-);
-
-const serviceURLSecondary = new ServiceURL(
-  `https://${secondaryAccountName}.blob.core.windows.net`,
-  pipeline
-);
+// Create ServiceURLs for the primary and secondary regions.
+const primaryServiceURL = new ServiceURL(primaryAccountURL, pipeline);
+const secondaryServiceURL = new ServiceURL(secondaryAccountURL, pipeline);
 
 const fileName = 'HelloWorld.png';
 const containerName = `newcontainer${new Date().getTime()}`;
-const containerURL = ContainerURL.fromServiceURL(serviceURL, containerName);
+const containerURL = ContainerURL.fromServiceURL(primaryServiceURL, containerName);
 const blobURL = BlobURL.fromContainerURL(containerURL, fileName);
 const blockBlobURL = BlockBlobURL.fromContainerURL(containerURL, fileName);
 
@@ -81,7 +74,7 @@ async function uploadBlob() {
   
   while (!replicated) {
     try {
-      const containerURLSecondary = ContainerURL.fromServiceURL(serviceURLSecondary, containerName);
+      const containerURLSecondary = ContainerURL.fromServiceURL(secondaryServiceURL, containerName);
       const listBlobsResponse = await containerURLSecondary.listBlobFlatSegment(Aborter.none);
       const blobItems = listBlobsResponse.segment.blobItems;
 
