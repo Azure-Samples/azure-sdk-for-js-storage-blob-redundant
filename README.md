@@ -4,7 +4,9 @@ languages:
 - javascript
 - nodejs
 products:
+- azure
 - azure-storage
+description: "This sample shows how to use the Node.js V10 Storage SDK with read-access geo-redundant storage (RA-GRS)."
 ---
 
 # Build a highly available app in Node.js with RA-GRS storage
