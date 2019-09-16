@@ -13,9 +13,9 @@ If you don't have a Microsoft Azure subscription, you can get a FREE trial accou
 
 Two folders are referred to different version of Azure SDK.
 * storage-node-v10-ha-ra-grs-v3 referenced to following packages:
-  * @azure/storage-blob@10.3.0
+  * [@azure/storage-blob](https://www.npmjs.com/package/@azure/storage-blob/v/10.3.0)
 * storage-node-v10-ha-ra-grs-v4 referenced to following packages:
-  * @azure/storage-blob@12.0.0-preview.2
+  * [@azure/storage-blob](https://www.npmjs.com/package/@azure/storage-blob/v/12.0.0-preview.2)
 
 ## More information
 
