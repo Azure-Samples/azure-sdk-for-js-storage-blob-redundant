@@ -1,6 +1,6 @@
-# Build a highly available app in Node.js with RA-GRS storage
+# Build a high availability app in Node.js with RA-GRS storage
 
-This sample shows how to use the Node.js V10 Storage SDK with read-access geo-redundant storage (RA-GRS) to create a highly available application that accesses files from secondary storage when there is a problem with primary storage, and then switches back when primary storage becomes available again. For more information, see [Designing HA Apps with RA-GRS storage](https://docs.microsoft.com/azure/storage/common/storage-designing-ha-apps-with-ragrs).
+This sample shows how to use the Node.js V10 Storage SDK with read-access geo-redundant storage (RA-GRS) to create a high availability app that accesses files from secondary storage when primary storage is down, and then switches back to primary storage when it becomes available again. For more information, see [Designing HA Apps with RA-GRS storage](https://docs.microsoft.com/azure/storage/common/storage-designing-ha-apps-with-ragrs).
 
 If you don't have a Microsoft Azure subscription, you can get a FREE trial account <a href="http://go.microsoft.com/fwlink/?LinkId=330212">here</a>.
 
@@ -21,9 +21,9 @@ To run this sample and verify that files are downloaded from primary storage:
 
     You can find this information in the Azure portal by navigating to your storage account and selecting **Access keys** in the **Settings** section. 
 
-2. Install the required dependencies in the console window by entering `npm install`.
+2. Install the required dependencies in the console window by running `npm install`.
 
-3. Launch the sample from the console window by entering `node index.js`.
+3. Launch the sample from the console window by running `node index.js`.
 
 4. Wait until the sample reports that the container and file have replicated to secondary storage.
 
