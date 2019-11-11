@@ -4,7 +4,7 @@ This sample shows how to use the Node.js V10 Storage SDK with read-access geo-re
 
 ## Prerequisites
 
-To run this sample and verify that files are downloaded from primary storage，we need :
+Using following steps before running this sample and verify that files are downloaded from primary storage:
 
 1. Add your storage account credentials to the `.env.example` file and then rename it to `.env`.
 
@@ -17,7 +17,7 @@ To run this sample and verify that files are downloaded from primary storage，w
 
 2. Install the required dependencies in the console window by running `npm install`.
 
-To test secondary storage access,we need :
+Steps to test secondary storage access:
 
 1. Open a command prompt with administrator privileges.
 
@@ -43,12 +43,12 @@ To test secondary storage access,we need :
     route add <destination_ip> <gateway_ip>
     ```
 
-## In this sample , you will do the following : 
+## In this sample you will do the following: 
 
 * Create a storage account.
 * Create a container.
 * Upload a file to blockblob.
-* Enter D to download the file or Q to quit
+* Enter D to download the file or Q to quit.
 
 If you don't have a Microsoft Azure subscription, you can get a free trial account <a href="http://go.microsoft.com/fwlink/?LinkId=330212">here</a>.
 
