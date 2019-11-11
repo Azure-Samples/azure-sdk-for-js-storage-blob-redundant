@@ -89,7 +89,7 @@ To test secondary storage access , we are going to :
 
 ## Azure SDK versions
 
-You will find the following folders: key-vault-node-quickstart-3, which references the [@azure/storage-blob](https://www.npmjs.com/package/@azure/storage-blob/v/10.3.0),10.3.0 version of SDK and keyvault-node-quickstart-v4, which uses the [@azure/storage-blob](https://www.npmjs.com/package/@azure/storage-blob/v/12.0.0),12.0.0 version of the SDK.
+You will find the following folders: storage-node-v10-ha-ra-grs-v3, which references the [@azure/storage-blob](https://www.npmjs.com/package/@azure/storage-blob/v/10.3.0),10.3.0 version of SDK and storage-node-v10-ha-ra-grs-v4, which uses the [@azure/storage-blob](https://www.npmjs.com/package/@azure/storage-blob/v/12.0.0),12.0.0 version of the SDK.
 
 ## More information
 
