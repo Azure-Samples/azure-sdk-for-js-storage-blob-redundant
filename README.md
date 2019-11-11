@@ -44,6 +44,7 @@ To test secondary storage access,we need :
     ```
 
 ## In this sample , you will do the following : 
+
 * Create a storage account.
 * Create a container.
 * Upload a file to blockblob.
@@ -57,7 +58,7 @@ This sample creates a new container in blob storage and uploads a sample file in
 
 ## How to run the sample
 
-To run this sample and verify that files are downloaded from primary storage , we are going to:
+To run this sample and verify that files are downloaded from primary storage, we are going to:
 
 1. Launch the sample from the console window by running `node index.js`.
 
@@ -65,7 +66,7 @@ To run this sample and verify that files are downloaded from primary storage , w
 
 3. When prompted, press D to download the sample file and verify that it comes from primary storage.
 
-To test secondary storage access , we are going to :
+To test secondary storage access, we are going to:
 
 1. In the console window with the running sample, press D to download the sample file and verify that it comes from secondary storage.
 
@@ -89,7 +90,23 @@ To test secondary storage access , we are going to :
 
 ## Azure SDK versions
 
-You will find the following folders: storage-node-v10-ha-ra-grs-v3, which references the [@azure/storage-blob](https://www.npmjs.com/package/@azure/storage-blob/v/10.3.0),10.3.0 version of SDK and storage-node-v10-ha-ra-grs-v4, which uses the [@azure/storage-blob](https://www.npmjs.com/package/@azure/storage-blob/v/12.0.0),12.0.0 version of the SDK.
+* To use the latest Azure SDK version [storage-node-v10-ha-ra-grs-v4] please add the following dependency to the package.json file:
+
+```json
+   "dependencies": {
+       "@azure/storage-blob": "^12.0.0",
+       "dotenv": "^8.2.0"
+    }
+```
+
+* For the previous stable Azure SDK version [storage-node-v10-ha-ra-grs-v3] please add the following dependencies to the package.json file :
+
+```json
+   "dependencies": {
+       "@azure/storage-blob": "^10.3.0",
+       "dotenv": "^6.2.0"
+    }
+```
 
 ## More information
 
