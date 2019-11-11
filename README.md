@@ -4,7 +4,7 @@ This sample shows how to use the Node.js V10 Storage SDK with read-access geo-re
 
 ## Prerequisites
 
-Using following steps before running this sample and verify that files are downloaded from primary storage:
+Following prerequisites are needed to run this sample and verify that files are downloaded from primary storage:
 
 1. Add your storage account credentials to the `.env.example` file and then rename it to `.env`.
 
