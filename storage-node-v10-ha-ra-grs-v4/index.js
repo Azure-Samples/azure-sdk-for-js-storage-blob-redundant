@@ -6,7 +6,7 @@ if (process.env.NODE_ENV !== 'production') {
 
 const {
   BlobServiceClient,
-  SharedKeyCredential,
+  StorageSharedKeyCredential,
   uploadFile,
   newPipeline
 } = require('@azure/storage-blob');
@@ -21,7 +21,7 @@ const readInput = readline.createInterface({
 // Read environment variables for storage access.
 const accountName = process.env.AZURE_STORAGE_ACCOUNT_NAME;
 const storageAccessKey = process.env.AZURE_STORAGE_ACCOUNT_ACCESS_KEY;
-const sharedKeyCredential = new SharedKeyCredential(accountName, storageAccessKey);
+const sharedKeyCredential = new StorageSharedKeyCredential(accountName, storageAccessKey);
 const primaryAccountURL = `https://${accountName}.blob.core.windows.net`;
 const secondaryAccountURL = `https://${accountName}-secondary.blob.core.windows.net`;
 
