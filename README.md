@@ -88,25 +88,9 @@ To test secondary storage access, we are going to:
 
 4. Press Q to quit the sample and delete the container and file from storage.
 
-## Azure SDK versions
+## Folders introduction
 
-* To use the latest Azure SDK version [storage-node-v10-ha-ra-grs-v4] please add the following dependency to the package.json file:
-
-```json
-   "dependencies": {
-       "@azure/storage-blob": "^12.0.0",
-       "dotenv": "^8.2.0"
-    }
-```
-
-* For the previous stable Azure SDK version [storage-node-v10-ha-ra-grs-v3] please add the following dependencies to the package.json file :
-
-```json
-   "dependencies": {
-       "@azure/storage-blob": "^10.3.0",
-       "dotenv": "^6.2.0"
-    }
-```
+You will find the following folders: storage-node-v10-ha-ra-grs-v3, which references the [@azure/storage-blob](https://www.npmjs.com/package/@azure/storage-blob/v/10.3.0) version 10.3.0 of the SDK and storage-node-v10-ha-ra-grs-v4, which uses the [@azure/storage-blob](https://www.npmjs.com/package/@azure/storage-blob/v/12.0.0) version 12.0.0 of the SDK.
 
 ## More information
 
