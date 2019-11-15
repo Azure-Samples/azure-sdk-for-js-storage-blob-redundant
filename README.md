@@ -2,7 +2,7 @@
 
 This sample shows how to use the Node.js V10 Storage SDK with read-access geo-redundant storage (RA-GRS) to create a high availability app that accesses files from secondary storage when primary storage is down, and then switches back to primary storage when it becomes available again. For more information, see [Designing HA Apps with RA-GRS storage](https://docs.microsoft.com/azure/storage/common/storage-designing-ha-apps-with-ragrs).
 
-## Folders introduction
+## SDK Versions
 
 You will find the following folders: [storage-node-v10-ha-ra-grs-v3](./storage-node-v10-ha-ra-grs-v3), which references the [@azure/storage-blob version 10.3.0](https://www.npmjs.com/package/@azure/storage-blob/v/10.3.0) of the SDK and [storage-node-v10-ha-ra-grs-v4](./storage-node-v10-ha-ra-grs-v4), which uses the [@azure/storage-blob version 12.0.0](https://www.npmjs.com/package/@azure/storage-blob/v/12.0.0) of the SDK.
 
