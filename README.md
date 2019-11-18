@@ -4,7 +4,7 @@ This sample shows how to use the Node.js V10 Storage SDK with read-access geo-re
 
 ## SDK Versions
 
-You will find the following folders: [storage-node-v10-ha-ra-grs-v3](./storage-node-v10-ha-ra-grs-v3), which references the [@azure/storage-blob version 10.3.0](https://www.npmjs.com/package/@azure/storage-blob/v/10.3.0) of the SDK and [storage-node-v10-ha-ra-grs-v12](./storage-node-v10-ha-ra-grs-v12), which uses the [@azure/storage-blob version 12.0.0](https://www.npmjs.com/package/@azure/storage-blob/v/12.0.0) of the SDK.
+You will find the following folders: [storage-node-v10-ha-ra-grs-v10](./storage-node-v10-ha-ra-grs-v10), which references the [@azure/storage-blob version 10.3.0](https://www.npmjs.com/package/@azure/storage-blob/v/10.3.0) of the SDK and [storage-node-v10-ha-ra-grs-v12](./storage-node-v10-ha-ra-grs-v12), which uses the [@azure/storage-blob version 12.0.0](https://www.npmjs.com/package/@azure/storage-blob/v/12.0.0) of the SDK.
 
 ## Prerequisites
 
