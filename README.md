@@ -1,10 +1,24 @@
-# Build a high availability app in Node.js with RA-GRS storage
+---
+page_type: sample
+languages:
+- javascript
+- nodejs
+products:
+- azure
+- azure-storage
+description: "This sample shows how to use the Node.js V10 Storage SDK with read-access geo-redundant storage (RA-GRS)."
+---
 
-This sample shows how to use the Node.js V10 Storage SDK with read-access geo-redundant storage (RA-GRS) to create a high availability app that accesses files from secondary storage when primary storage is down, and then switches back to primary storage when it becomes available again. For more information, see [Designing HA Apps with RA-GRS storage](https://docs.microsoft.com/azure/storage/common/storage-designing-ha-apps-with-ragrs).
+# Build a highly available app in Node.js with RA-GRS storage
+
+This sample shows how to use the Node.js V10 Storage SDK with read-access geo-redundant storage (RA-GRS) to create a highly available app that accesses files from secondary storage when primary storage is down, and then switches back to primary storage when it becomes available again. For more information, see [Designing HA Apps with RA-GRS storage](https://docs.microsoft.com/azure/storage/common/storage-designing-ha-apps-with-ragrs).
 
 ## SDK Versions
 
-You will find the following folders: [storage-node-ha-ra-grs-v10](./storage-node-ha-ra-grs-v10), which references the [@azure/storage-blob version 10.3.0](https://www.npmjs.com/package/@azure/storage-blob/v/10.3.0) of the SDK and [storage-node-ha-ra-grs-v12](./storage-node-ha-ra-grs-v12), which uses the [@azure/storage-blob version 12.0.0](https://www.npmjs.com/package/@azure/storage-blob/v/12.0.0) of the SDK.
+In this sample, you will find the following folders:
+
+* **[storage-node-ha-ra-grs-v10](./storage-node-ha-ra-grs-v10)** - references [Storage Blob SDK v10.3.0](https://www.npmjs.com/package/@azure/storage-blob/v/10.3.0)
+* **[storage-node-ha-ra-grs-v12](./storage-node-ha-ra-grs-v12)** - references [Storage Blob SDK v12.0.0](https://www.npmjs.com/package/@azure/storage-blob/v/12.0.0)
 
 ## Prerequisites
 
