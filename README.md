@@ -29,8 +29,8 @@ Following prerequisites are needed to run this sample and verify that files are 
 1. Add your storage account credentials to the `.env.example` file and then rename it to `.env`.
 
     ```
-    AZURE_STORAGE_ACCOUNT_NAME=<replace with your storage account name>
-    AZURE_STORAGE_ACCOUNT_ACCESS_KEY=<replace with your storage account access key>
+    AZURE_STORAGE_ACCOUNT_NAME=<Replace With Your Storage Account Name>
+    AZURE_STORAGE_ACCOUNT_ACCESS_KEY=<Replace With Your Storage Account Access Key>
     ```
 
     You can find this information in the Azure portal by navigating to your storage account and selecting **Access keys** in the **Settings** section. 
