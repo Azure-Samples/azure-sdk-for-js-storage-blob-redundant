@@ -13,6 +13,8 @@ description: "This sample shows how to use the Node.js V10 Storage SDK with read
 
 This sample shows how to use the Node.js V10 Storage SDK with read-access geo-redundant storage (RA-GRS) to create a highly available app that accesses files from secondary storage when primary storage is down, and then switches back to primary storage when it becomes available again. For more information, see [Designing HA Apps with RA-GRS storage](https://docs.microsoft.com/azure/storage/common/storage-designing-ha-apps-with-ragrs).
 
+If you don't have a Microsoft Azure subscription, you can get a free trial account <a href="http://go.microsoft.com/fwlink/?LinkId=330212">here</a>.
+
 ## SDK Versions
 
 In this sample, you will find the following folders:
@@ -67,8 +69,6 @@ Steps to test secondary storage access:
 * Create a container.
 * Upload a file to blockblob.
 * Enter D to download the file or Q to quit.
-
-If you don't have a Microsoft Azure subscription, you can get a free trial account <a href="http://go.microsoft.com/fwlink/?LinkId=330212">here</a>.
 
 ## How it works
 
