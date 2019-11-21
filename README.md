@@ -13,7 +13,7 @@ description: "This sample shows how to use the Node.js V10 Storage SDK with read
 
 This sample shows how to use the Node.js V10 Storage SDK with read-access geo-redundant storage (RA-GRS) to create a highly available app that accesses files from secondary storage when primary storage is down, and then switches back to primary storage when it becomes available again. For more information, see [Designing HA Apps with RA-GRS storage](https://docs.microsoft.com/azure/storage/common/storage-designing-ha-apps-with-ragrs).
 
-If you don't have a Microsoft Azure subscription, you can get a free trial account <a href="http://go.microsoft.com/fwlink/?LinkId=330212">here</a>.
+If you don't have a Microsoft Azure subscription, you can get a free account <a href="http://go.microsoft.com/fwlink/?LinkId=330212">here</a>.
 
 ## SDK Versions
 
@@ -29,8 +29,8 @@ Following prerequisites are needed to run this sample and verify that files are 
 1. Add your storage account credentials to the `.env.example` file and then rename it to `.env`.
 
     ```
-    AZURE_STORAGE_ACCOUNT_NAME=<Replace With Your Storage Account Name>
-    AZURE_STORAGE_ACCOUNT_ACCESS_KEY=<Replace With Your Storage Account Access Key>
+    AZURE_STORAGE_ACCOUNT_NAME=<ReplaceWithYourStorageAccountName>
+    AZURE_STORAGE_ACCOUNT_ACCESS_KEY=<ReplaceWithYourStorageAccountAccessKey>
     ```
 
     You can find this information in the Azure portal by navigating to your storage account and selecting **Access keys** in the **Settings** section. 
