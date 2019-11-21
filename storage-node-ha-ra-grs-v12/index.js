@@ -1,7 +1,7 @@
 // Configure .env file with appropriate environmental variables
 // for your storage account.
 if (process.env.NODE_ENV !== 'production') {
-  require('dotenv').load();
+  require('dotenv').config();
 }
 
 const {
