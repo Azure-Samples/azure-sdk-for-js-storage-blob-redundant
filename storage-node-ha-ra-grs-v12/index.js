@@ -7,7 +7,6 @@ if (process.env.NODE_ENV !== 'production') {
 const {
   BlobServiceClient,
   StorageSharedKeyCredential,
-  uploadFile,
   newPipeline
 } = require('@azure/storage-blob');
 

@@ -49,18 +49,18 @@ Steps to test secondary storage access:
 
 3. Get the IP address of your local host by entering `ifconfig` on Linux or `ipconfig` on Windows.
 
-4. Add an invalid static route for a destination host. Replace `<destination_ip>` with your storage account IP address, and `<gateway_ip>` with your local host IP address.
+4. Add an invalid static route for a destination host. Replace `<DestinationIp>` with your storage account IP address, and `<GatewayIp>` with your local host IP address.
 
     **Linux**
 
     ```bash
-    route add <destination_ip> gw <gateway_ip>
+    route add <DestinationIp> gw <GatewayIp>
     ```
 
     **Windows**
 
     ```cmd
-    route add <destination_ip> <gateway_ip>
+    route add <DestinationIp> <GatewayIp>
     ```
 
 ## In this sample you will do the following: 
@@ -93,13 +93,13 @@ To test secondary storage access, we are going to:
     **Linux**
 
     ```bash
-    route del <destination_ip> gw <gateway_ip>
+    route del <DestinationIp> gw <GatewayIp>
     ```
 
     **Windows**
 
     ```cmd
-    route delete <destination_ip>
+    route delete <DestinationIp>
     ```
 
 3. In the console window with the running sample, press D to download the sample file and verify that it comes from primary storage. 
