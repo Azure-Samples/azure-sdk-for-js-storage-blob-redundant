@@ -114,8 +114,8 @@ To test secondary storage access, we are going to:
 - [Azure Storage Replication]
 
 <!-- LINKS -->
-[azure-sdk-for-js-storage-blob-redundant-v10]: https://github.com/Azure-Samples/storage-node-v10-ha-ra-grs/tree/master/storage-node-ha-ra-grs-v10
-[azure-sdk-for-js-storage-blob-redundant-v12]: https://github.com/Azure-Samples/storage-node-v10-ha-ra-grs/tree/master/storage-node-ha-ra-grs-v12
+[azure-sdk-for-js-storage-blob-redundant-v10]: https://github.com/Azure-Samples/storage-node-v10-ha-ra-grs/tree/master/azure-sdk-for-js-storage-blob-redundant-v10
+[azure-sdk-for-js-storage-blob-redundant-v12]: https://github.com/Azure-Samples/storage-node-v10-ha-ra-grs/tree/master/azure-sdk-for-js-storage-blob-redundant-v12
 [Storage Blob SDK v10.3.0]: https://www.npmjs.com/package/@azure/storage-blob/v/10.3.0
 [Storage Blob SDK v12.0.0]: https://www.npmjs.com/package/@azure/storage-blob/v/12.0.0
 [About Azure Storage Accounts]: https://docs.microsoft.com/azure/storage/storage-create-storage-account
