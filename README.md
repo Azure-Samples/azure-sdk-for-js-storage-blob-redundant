@@ -6,12 +6,13 @@ languages:
 products:
 - azure
 - azure-storage
-description: "This sample shows how to use the Node.js V10 Storage SDK with read-access geo-redundant storage (RA-GRS)."
+description: "This sample shows how to use the Azure Storage JavaScript SDK with read-access geo-redundant."
+urlFragment: "redundant-storage-javascript"
 ---
 
-# Build a highly available app in Node.js with RA-GRS storage
+# How to utilize redundant Azure Blob Storage with JavaScript
 
-This sample shows how to use the Node.js V10 Storage SDK with read-access geo-redundant storage (RA-GRS) to create a highly available app that accesses files from secondary storage when primary storage is down, and then switches back to primary storage when it becomes available again. For more information, see [Designing HA Apps with RA-GRS storage](https://docs.microsoft.com/azure/storage/common/storage-designing-ha-apps-with-ragrs).
+This sample shows how to utilize redundant Azure Blob Storage with JavaScript.
 
 If you don't have a Microsoft Azure subscription, you can get a free account <a href="http://go.microsoft.com/fwlink/?LinkId=330212">here</a>.
 
@@ -19,8 +20,8 @@ If you don't have a Microsoft Azure subscription, you can get a free account <a 
 
 In this sample, you will find the following folders:
 
-* **[storage-node-ha-ra-grs-v10](./storage-node-ha-ra-grs-v10)** - references [Storage Blob SDK v10.3.0](https://www.npmjs.com/package/@azure/storage-blob/v/10.3.0)
-* **[storage-node-ha-ra-grs-v12](./storage-node-ha-ra-grs-v12)** - references [Storage Blob SDK v12.0.0](https://www.npmjs.com/package/@azure/storage-blob/v/12.0.0)
+* **[azure-sdk-for-js-storage-blob-redundant-v10]** - references [Storage Blob SDK v10.3.0]
+* **[azure-sdk-for-js-storage-blob-redundant-v12]** - references [Storage Blob SDK v12.0.0]
 
 ## Prerequisites
 
@@ -108,6 +109,16 @@ To test secondary storage access, we are going to:
 
 ## More information
 
-- [About Azure Storage Accounts](https://docs.microsoft.com/azure/storage/storage-create-storage-account)
-- [Designing HA Apps with RA-GRS Storage](https://docs.microsoft.com/azure/storage/common/storage-designing-ha-apps-with-ragrs)
-- [Azure Storage Replication](https://docs.microsoft.com/azure/storage/storage-redundancy)
+- [About Azure Storage Accounts]
+- [Designing HA Apps with RA-GRS Storage]
+- [Azure Storage Replication]
+
+<!-- LINKS -->
+[azure-sdk-for-js-storage-blob-redundant-v10]: https://github.com/Azure-Samples/azure-sdk-for-js-storage-blob-redundant/tree/master/azure-sdk-for-js-storage-blob-redundant-v10
+[azure-sdk-for-js-storage-blob-redundant-v12]: https://github.com/Azure-Samples/azure-sdk-for-js-storage-blob-redundant/tree/master/azure-sdk-for-js-storage-blob-redundant-v12
+[Storage Blob SDK v10.3.0]: https://www.npmjs.com/package/@azure/storage-blob/v/10.3.0
+[Storage Blob SDK v12.0.0]: https://www.npmjs.com/package/@azure/storage-blob/v/12.0.0
+[About Azure Storage Accounts]: https://docs.microsoft.com/azure/storage/storage-create-storage-account
+[Designing HA Apps with RA-GRS Storage]: https://docs.microsoft.com/azure/storage/common/storage-designing-ha-apps-with-ragrs
+[Azure Storage Replication]: https://docs.microsoft.com/azure/storage/storage-redundancy
+
