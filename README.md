@@ -6,7 +6,7 @@ languages:
 products:
 - azure
 - azure-storage
-description: "This sample shows how to use the Azure Storage JavaScript SDK with read-access geo-redundant."
+description: "How to use the Azure Storage JavaScript SDK with read-access geo-redundant."
 urlFragment: redundant-storage-javascript
 ---
 
