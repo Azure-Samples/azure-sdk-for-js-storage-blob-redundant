@@ -14,7 +14,7 @@ urlFragment: redundant-storage-javascript
 
 This sample shows how to utilize redundant Azure Blob Storage with JavaScript.
 
-If you don't have a Microsoft Azure subscription, you can get a free account <a href="http://go.microsoft.com/fwlink/?LinkId=330212">here</a>.
+If you don't have a Microsoft Azure subscription, you can get a [free account] before you begin.
 
 ## SDK Versions
 
@@ -121,4 +121,5 @@ To test secondary storage access, we are going to:
 [About Azure Storage Accounts]: https://docs.microsoft.com/azure/storage/storage-create-storage-account
 [Designing HA Apps with RA-GRS Storage]: https://docs.microsoft.com/azure/storage/common/storage-designing-ha-apps-with-ragrs
 [Azure Storage Replication]: https://docs.microsoft.com/azure/storage/storage-redundancy
+[free account]: http://go.microsoft.com/fwlink/?LinkId=330212
 
