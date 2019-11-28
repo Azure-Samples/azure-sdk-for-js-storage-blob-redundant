@@ -7,7 +7,7 @@ products:
 - azure
 - azure-storage
 description: "This sample shows how to use the Azure Storage JavaScript SDK with read-access geo-redundant."
-urlFragment: "redundant-storage-javascript"
+urlFragment: redundant-storage-javascript
 ---
 
 # How to utilize redundant Azure Blob Storage with JavaScript
@@ -20,8 +20,8 @@ If you don't have a Microsoft Azure subscription, you can get a free account <a 
 
 In this sample, you will find the following folders:
 
-* **[azure-sdk-for-js-storage-blob-redundant-v10]** - references [Storage Blob SDK v10.3.0]
-* **[azure-sdk-for-js-storage-blob-redundant-v12]** - references [Storage Blob SDK v12.0.0]
+* **[azure-sdk-for-js-storage-blob-redundant-v10]** - references [Storage Blob SDK v10]
+* **[azure-sdk-for-js-storage-blob-redundant-v12]** - references [Storage Blob SDK v12]
 
 ## Prerequisites
 
@@ -116,8 +116,8 @@ To test secondary storage access, we are going to:
 <!-- LINKS -->
 [azure-sdk-for-js-storage-blob-redundant-v10]: https://github.com/Azure-Samples/azure-sdk-for-js-storage-blob-redundant/tree/master/azure-sdk-for-js-storage-blob-redundant-v10
 [azure-sdk-for-js-storage-blob-redundant-v12]: https://github.com/Azure-Samples/azure-sdk-for-js-storage-blob-redundant/tree/master/azure-sdk-for-js-storage-blob-redundant-v12
-[Storage Blob SDK v10.3.0]: https://www.npmjs.com/package/@azure/storage-blob/v/10.3.0
-[Storage Blob SDK v12.0.0]: https://www.npmjs.com/package/@azure/storage-blob/v/12.0.0
+[Storage Blob SDK v10]: https://www.npmjs.com/package/@azure/storage-blob/v/10.3.0
+[Storage Blob SDK v12]: https://www.npmjs.com/package/@azure/storage-blob/v/12.0.0
 [About Azure Storage Accounts]: https://docs.microsoft.com/azure/storage/storage-create-storage-account
 [Designing HA Apps with RA-GRS Storage]: https://docs.microsoft.com/azure/storage/common/storage-designing-ha-apps-with-ragrs
 [Azure Storage Replication]: https://docs.microsoft.com/azure/storage/storage-redundancy
