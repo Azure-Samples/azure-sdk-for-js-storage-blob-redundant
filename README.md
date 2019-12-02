@@ -15,8 +15,8 @@ urlFragment: redundant-storage-javascript
 ## SDK Versions
 In this sample, you will find the following folders:
 
-* **azure-sdk-for-js-storage-blob-redundant-v10** - references Storage Blob SDK v10
-* **azure-sdk-for-js-storage-blob-redundant-v12** - references Storage Blob SDK v12
+* **v10** - references Storage Blob SDK v10
+* **v12** - references Storage Blob SDK v12
 
 ## Prerequisites
 If you don't have a Microsoft Azure subscription, you can get a [free account] before you begin.
