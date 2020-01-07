@@ -6,23 +6,20 @@ languages:
 products:
 - azure
 - azure-storage
-description: "This sample shows how to use the Node.js V10 Storage SDK with read-access geo-redundant storage (RA-GRS)."
+description: "How to use the Azure Storage JavaScript SDK with read-access geo-redundant."
+urlFragment: redundant-storage-javascript
 ---
 
-# Build a highly available app in Node.js with RA-GRS storage
-
-This sample shows how to use the Node.js V10 Storage SDK with read-access geo-redundant storage (RA-GRS) to create a highly available app that accesses files from secondary storage when primary storage is down, and then switches back to primary storage when it becomes available again. For more information, see [Designing HA Apps with RA-GRS storage](https://docs.microsoft.com/azure/storage/common/storage-designing-ha-apps-with-ragrs).
-
-If you don't have a Microsoft Azure subscription, you can get a free account <a href="http://go.microsoft.com/fwlink/?LinkId=330212">here</a>.
+# How to utilize redundant Azure Blob Storage with JavaScript
 
 ## SDK Versions
-
 In this sample, you will find the following folders:
 
-* **[storage-node-ha-ra-grs-v10](./storage-node-ha-ra-grs-v10)** - references [Storage Blob SDK v10.3.0](https://www.npmjs.com/package/@azure/storage-blob/v/10.3.0)
-* **[storage-node-ha-ra-grs-v12](./storage-node-ha-ra-grs-v12)** - references [Storage Blob SDK v12.0.0](https://www.npmjs.com/package/@azure/storage-blob/v/12.0.0)
+* **v10** - references Storage Blob SDK v10
+* **v12** - references Storage Blob SDK v12
 
 ## Prerequisites
+If you don't have a Microsoft Azure subscription, you can get a [free account] before you begin.
 
 Following prerequisites are needed to run this sample and verify that files are downloaded from primary storage:
 
@@ -63,19 +60,16 @@ Steps to test secondary storage access:
     route add <DestinationIp> <GatewayIp>
     ```
 
-## In this sample you will do the following: 
-
+## This Sample shows how to do following operations of Storage Blobs
 * Create a storage account.
 * Create a container.
 * Upload a file to blockblob.
 * Enter D to download the file or Q to quit.
 
 ## How it works
-
 This sample creates a new container in blob storage and uploads a sample file into it called `HelloWorld.jpg`. It then checks secondary storage repeatedly until both the container and file have been replicated. The user can then enter D to download the file or Q to quit. If the file is successfully downloaded, the sample indicates whether it came from primary or secondary storage. When the user quits the sample, it deletes the container and file. 
 
 ## How to run the sample
-
 To run this sample and verify that files are downloaded from primary storage, we are going to:
 
 1. Launch the sample from the console window by running `node index.js`.
@@ -107,7 +101,13 @@ To test secondary storage access, we are going to:
 4. Press Q to quit the sample and delete the container and file from storage.
 
 ## More information
+- [About Azure Storage Accounts]
+- [Designing HA Apps with RA-GRS Storage]
+- [Azure Storage Replication]
 
-- [About Azure Storage Accounts](https://docs.microsoft.com/azure/storage/storage-create-storage-account)
-- [Designing HA Apps with RA-GRS Storage](https://docs.microsoft.com/azure/storage/common/storage-designing-ha-apps-with-ragrs)
-- [Azure Storage Replication](https://docs.microsoft.com/azure/storage/storage-redundancy)
+<!-- LINKS -->
+[About Azure Storage Accounts]: https://docs.microsoft.com/azure/storage/storage-create-storage-account
+[Designing HA Apps with RA-GRS Storage]: https://docs.microsoft.com/azure/storage/common/storage-designing-ha-apps-with-ragrs
+[Azure Storage Replication]: https://docs.microsoft.com/azure/storage/storage-redundancy
+[free account]: http://go.microsoft.com/fwlink/?LinkId=330212
+
