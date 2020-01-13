@@ -111,3 +111,4 @@ To test secondary storage access, we are going to:
 [Azure Storage Replication]: https://docs.microsoft.com/azure/storage/storage-redundancy
 [free account]: http://go.microsoft.com/fwlink/?LinkId=330212
 
+ 
