@@ -105,7 +105,7 @@ To test secondary storage access, we are going to:
 - [Designing HA Apps with RA-GRS Storage]
 - [Azure Storage Replication]
 
-<!-- LINKS -->
+<!-- LINKS  -->
 [About Azure Storage Accounts]: https://docs.microsoft.com/azure/storage/storage-create-storage-account
 [Designing HA Apps with RA-GRS Storage]: https://docs.microsoft.com/azure/storage/common/storage-designing-ha-apps-with-ragrs
 [Azure Storage Replication]: https://docs.microsoft.com/azure/storage/storage-redundancy
